@@ -26,8 +26,9 @@
 <p align="center">
   <img src="https://github.com/wescleysrn/mestradounb/blob/master/imagens/pokemon/001.png">
 </p>
-<p align="justify">The project was created using the Angular framework, with Server Side Rendering, PWA capability and using bootstrap as a style sheet.</p>
-<p align="justify">The main Angular libraries such as forms, route, http, etc. were used.</p>
+<p align="justify">The project was created using the Start Spring Initializr, Maven project and added web dependency, Swagger was not included for API documentation, Log, etc as it exceeded the scope of the challenge.</p>
+<p align="justify">Resources such as stream, spring test using hamcrest as validator were used, controllers and mediators were covered. Spring http from spring web was used generating api returns via HttpEntity, MessageConverters customization was avoided by creating a DTO structure with a subclass equal to the API return.</p>
+<p align="justify">To simulate the API, you can use API calls via the browser or, after running the Java project, run the Angular web project and use the Backend API Menu option.</p>
 <p align="center">
   <img src="https://github.com/wescleysrn/mestradounb/blob/master/imagens/pokemon/002.png">
 </p>
