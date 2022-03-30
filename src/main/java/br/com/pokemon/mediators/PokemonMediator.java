@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
-import br.com.pokemon.dto.pokemon.PokemonCapacityDTO;
-import br.com.pokemon.dto.pokemon.PokemonDTO;
-import br.com.pokemon.dto.pokemon.PokemonDetailDTO;
-import br.com.pokemon.exception.PokemonAPIIntegrationException;
+import br.com.pokemon.dtos.pokemon.PokemonCapacityDTO;
+import br.com.pokemon.dtos.pokemon.PokemonDTO;
+import br.com.pokemon.dtos.pokemon.PokemonDetailDTO;
+import br.com.pokemon.exceptions.PokemonAPIIntegrationException;
 
 /**
  * Class responsible for made request to Pokemon API

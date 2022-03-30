@@ -11,9 +11,9 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import br.com.pokemon.dto.openweather.CityWeatherDTO;
-import br.com.pokemon.exception.CityNotFoundException;
-import br.com.pokemon.exception.OpenWeatherIntegrationException;
+import br.com.pokemon.dtos.openweather.CityWeatherDTO;
+import br.com.pokemon.exceptions.CityNotFoundException;
+import br.com.pokemon.exceptions.OpenWeatherIntegrationException;
 
 /**
  * Class responsible for made request to Weather API

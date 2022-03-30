@@ -18,7 +18,7 @@ public class PokemonTypeMediator {
 	static Map<String, Map<Integer, Integer>> pokemonTypes = new LinkedHashMap<>();
 	
 	static {
-		pokemonTypes.put("ice", Map.of(Integer.MIN_VALUE-1, 5));
+		pokemonTypes.put("ice", Map.of(Integer.MIN_VALUE+1, 5));
 		pokemonTypes.put("water", Map.of(5, 10));
 		pokemonTypes.put("grass", Map.of(10,15));
 		pokemonTypes.put("ground", Map.of(15, 21));

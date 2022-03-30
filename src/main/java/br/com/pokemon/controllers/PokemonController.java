@@ -7,15 +7,15 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.pokemon.dto.PokemonByCityDTO;
-import br.com.pokemon.dto.openweather.CityWeatherDTO;
-import br.com.pokemon.dto.pokemon.PokemonDetailDTO;
+import br.com.pokemon.dtos.PokemonByCityDTO;
+import br.com.pokemon.dtos.openweather.CityWeatherDTO;
+import br.com.pokemon.dtos.pokemon.PokemonDetailDTO;
 import br.com.pokemon.services.PokemonService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -45,7 +45,7 @@ public class PokemonController {
 	 * @param cityName
 	 * @return
 	 */
-	@RequestMapping(value = "/pokemons/{city}", method = RequestMethod.GET)
+	@GetMapping(value = "/pokemons/{city}")
 	@Operation(summary = "Get the weather of a city by name")
 	@ApiResponses(value = { 
 		@ApiResponse(responseCode = "200", description = "Found the pokemons information by city name", 
@@ -67,7 +67,7 @@ public class PokemonController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping(value = "/imagem", method = RequestMethod.GET)
+	@GetMapping(value = "/imagem")
 	@Operation(summary = "Get the Pokemon image by url")
 	@ApiResponses(value = { 
 			@ApiResponse(responseCode = "200", description = "Found the Pokemon image by url", 

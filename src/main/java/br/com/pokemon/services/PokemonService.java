@@ -1,7 +1,7 @@
 package br.com.pokemon.services;
 
-import br.com.pokemon.dto.PokemonByCityDTO;
-import br.com.pokemon.dto.pokemon.PokemonDetailDTO;
+import br.com.pokemon.dtos.PokemonByCityDTO;
+import br.com.pokemon.dtos.pokemon.PokemonDetailDTO;
 
 public interface PokemonService {
 

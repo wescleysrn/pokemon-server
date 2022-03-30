@@ -3,9 +3,9 @@ package br.com.pokemon.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.pokemon.dto.PokemonByCityDTO;
-import br.com.pokemon.dto.openweather.CityWeatherDTO;
-import br.com.pokemon.dto.pokemon.PokemonDetailDTO;
+import br.com.pokemon.dtos.PokemonByCityDTO;
+import br.com.pokemon.dtos.openweather.CityWeatherDTO;
+import br.com.pokemon.dtos.pokemon.PokemonDetailDTO;
 import br.com.pokemon.mediators.OpenWeatherMediator;
 import br.com.pokemon.mediators.PokemonMediator;
 import br.com.pokemon.mediators.PokemonTypeMediator;
