@@ -1,4 +1,4 @@
-package br.com.pokemon;
+package br.com.pokemon.config;
 
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class ConfiguracaoCorsFilter implements Filter {
+public class ConfigurationCorsFilter implements Filter {
 
 	@Override
 	public void destroy() {

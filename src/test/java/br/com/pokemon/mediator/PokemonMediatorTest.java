@@ -12,8 +12,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import br.com.pokemon.dto.PokemonDTO;
-import br.com.pokemon.dto.PokemonDetailDTO;
+import br.com.pokemon.dto.pokemon.PokemonDTO;
+import br.com.pokemon.dto.pokemon.PokemonDetailDTO;
+import br.com.pokemon.mediators.PokemonMediator;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)

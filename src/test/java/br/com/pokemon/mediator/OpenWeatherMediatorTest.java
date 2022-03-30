@@ -10,7 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import br.com.pokemon.dto.CityWeatherDTO;
+import br.com.pokemon.dto.openweather.CityWeatherDTO;
+import br.com.pokemon.mediators.OpenWeatherMediator;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
@@ -24,7 +25,7 @@ public class OpenWeatherMediatorTest {
 		CityWeatherDTO cityWeatherDTO;
 		try {
 			cityWeatherDTO = openWeatherMediator.getWeatherByCityName("London");
-			assertThat(cityWeatherDTO.getName(), is("London"));
+			assertThat(cityWeatherDTO.getCityName(), is("London"));
 		} catch (Exception e) {
 			assertThat(Boolean.TRUE, is(Boolean.FALSE));
 		}		

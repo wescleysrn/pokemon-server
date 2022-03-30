@@ -18,7 +18,7 @@
 	
 	5 - Test API
 	
-	http://localhost:8080/api/openweather/bycity/London
+	http://localhost:8080/swagger-ui/index.html
 
 ## Pokemon-Server
 
